@@ -50,9 +50,11 @@ class App extends Component {
           <h1 className="App-loading-header">App Loading</h1>
         </div>
         <footer className="App-footer">
-          <span>Star Wars info from <a className="App-footer_link" href="https://swapi.co/">SWAPI</a> (online web API for all Star Wars canon universe data) </span>
+          <span>Star Wars info from <span className="App-footer_emphasize"><a className="App-footer_link" href="https://swapi.co/">SWAPI</a></span> (online web API for all Star Wars canon universe data) </span>
           <br/>
-          <span>All StarWars © COPYRIGHT owned by <span className="App-footer_emphasize">The Walt Disney Company</span></span>
+          <span>All StarWars © COPYRIGHT owned by <span className="App-footer_emphasize"><a className="App-footer_link" href="https://www.disney.com/">The Walt Disney Company</a></span></span>
+          <br/>
+          <span>Film images and other data courtesy of <span className="App-footer_emphasize"><a className="App-footer_link" href="http://www.imdb.com/">IMDb</a></span></span>
         </footer>
         </div>
       </div>
@@ -68,9 +70,11 @@ class App extends Component {
           <FilmList movies={films} images={images}/>
         </div>
         <footer className="App-footer">
-          <span>Star Wars info from <a className="App-footer_link" href="https://swapi.co/">SWAPI</a> (online web API for all Star Wars canon universe data) </span>
+          <span>Star Wars info from <span className="App-footer_emphasize"><a className="App-footer_link" href="https://swapi.co/">SWAPI</a></span> (online web API for all Star Wars canon universe data) </span>
           <br/>
-          <span>All StarWars © COPYRIGHT owned by <span className="App-footer_emphasize">The Walt Disney Company</span></span>
+          <span>All StarWars © COPYRIGHT owned by <span className="App-footer_emphasize"><a className="App-footer_link" href="https://www.disney.com/">The Walt Disney Company</a></span></span>
+          <br/>
+          <span>Film images and other data courtesy of <span className="App-footer_emphasize"><a className="App-footer_link" href="http://www.imdb.com/">IMDb</a></span></span>
         </footer>
       </div>
     );

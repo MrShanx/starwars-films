@@ -51,7 +51,10 @@ MODAL
   font-weight: bold;
   font-size: 15px;
   margin-bottom: 20px;
-  padding: 0 30px;
+  padding: 0 10px;
+}
+.modal .movie-imdb-link {
+	color: rgba(169,169,39,1);
 }
 .modal-movie-title {
   background: white;
@@ -74,7 +77,14 @@ MODAL
   color: lightblue;
   margin-right: auto;
 }
-
+.modal .modal-genre .rating-desc {
+	font-size: smaller;
+	color: rgba(169,169,39,1);
+}
+.modal .modal-genre .rating {
+	font-size: large;
+	color: gray;
+}
 .movie-numbers {
   display: flex;
 }
@@ -194,7 +204,10 @@ MOBILE
 	  font-weight: bold;
 	  font-size: 15px;
 	  margin: 0;
-	  padding: 0;
+	  padding: 0 10px;
+	}
+	.modal .movie-imdb-link {
+		color: rgba(169,169,39,1);
 	}
 	.modal-movie-title {
 	  background: white;
@@ -231,16 +244,19 @@ MOBILE
 /**********
 APPEAR EFFECT
 ***********/
-
-.appear {
-/*	background-color: green;
-*/ 	
+/*****
+scroll bars for the rest of text
+*****/
+.movie-description-container {
+	overflow: auto;
+}
+.movie-description-container .appear {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   -webkit-animation: animate 3.5s steps(290, end);
   		  animation: animate 3.5s steps(290, end);
   word-break: normal;
 }
-/* The typing effect */
+/* The appearance effect */
 @-webkit-keyframes animate {
   0% {
   	height: 0%;
