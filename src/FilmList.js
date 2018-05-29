@@ -16,9 +16,12 @@ const FilmList = ({ movies, images }) => {
 						    producer={movie[1].producer}
 						    release={movie[1].release_date}
 							desc={movie[1].opening_crawl}
+							url={movie[1].url}
 						//from images.js - local file
 							img={images[movie[1].episode_id - 1].img_link}
 							imgBig={images[movie[1].episode_id - 1].img_big}
+							imdbRating={images[movie[1].episode_id - 1].imdb_rating}
+							imdbLink={images[movie[1].episode_id - 1].imdb_link}
 						/>
 					);
 				})

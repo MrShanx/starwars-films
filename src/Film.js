@@ -96,6 +96,7 @@ const Modal = ({ showModal, closeModal, movie }) => (
 					<h1>{movie.name}</h1>
 					<div className="modal-genre">
 						<p className="genre">{`Episode ${movie.id}`}</p>
+						<p className="rating-desc">{`IMDB: `} <span className="rating">{`${movie.imdbRating}`}</span></p>
 					</div>
 					<div className="movie-numbers">
 						<div className="modal-rating">
@@ -122,7 +123,7 @@ const Modal = ({ showModal, closeModal, movie }) => (
 					<p className="movie-description appear">
 						{movie.desc}
 					</p>
-					<a href="https://swapi.co/">SWAPI</a>
+					<a href={movie.url}>SWAPI</a><a className="movie-imdb-link" href={movie.imdbLink}>IMDb</a>
 				</div>
 			</div>
 	</ReactModal>
