@@ -1,8 +1,9 @@
 {
-  "main.css": "static/css/main.8bf85ab2.css",
-  "main.css.map": "static/css/main.8bf85ab2.css.map",
-  "main.js": "static/js/main.a9cc6ac5.js",
-  "main.js.map": "static/js/main.a9cc6ac5.js.map",
+  "main.css": "static/css/main.e40ccb72.css",
+  "main.css.map": "static/css/main.e40ccb72.css.map",
+  "main.js": "static/js/main.5466eee6.js",
+  "main.js.map": "static/js/main.5466eee6.js.map",
   "static\\media\\StarWarsLogo.png": "static/media/StarWarsLogo.dcbe85fe.png",
-  "static\\media\\Starjout.ttf": "static/media/Starjout.f72f509a.ttf"
+  "static\\media\\Starjout.ttf": "static/media/Starjout.f72f509a.ttf",
+  "static\\media\\stars.png": "static/media/stars.6494ab5b.png"
 }
