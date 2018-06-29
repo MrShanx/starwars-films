@@ -18,7 +18,7 @@ const FilmList = ({ movies, images }) => {
 							desc={movie[1].opening_crawl}
 							url={movie[1].url}
 						//from images.js - local file
-							img={images[movie[1].episode_id - 1].img_link}
+							img={images[movie[1].episode_id - 1].img_big}
 							imgBig={images[movie[1].episode_id - 1].img_big}
 							imdbRating={images[movie[1].episode_id - 1].imdb_rating}
 							imdbLink={images[movie[1].episode_id - 1].imdb_link}

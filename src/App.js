@@ -52,7 +52,7 @@ class App extends Component {
           <img className="App-loading" src={load} alt={'load'} />
           <h1 className="App-loading-header">App Loading</h1>
         </div>
-        <footer className="App-footer">
+        <footer className="App-footer stars">
           <span>Star Wars info from <span className="App-footer_emphasize"><a className="App-footer_link" href="https://swapi.co/">SWAPI</a></span> (online web API for all Star Wars canon universe data) </span>
           <br/>
           <span>All StarWars © COPYRIGHT owned by <span className="App-footer_emphasize"><a className="App-footer_link" href="https://www.disney.com/">The Walt Disney Company</a></span></span>
@@ -76,7 +76,7 @@ class App extends Component {
           </div>
           <FilmList movies={films} images={images}/>
         </div>
-        <footer className="App-footer">
+        <footer className="App-footer stars-foot">
           <span>Star Wars info from <span className="App-footer_emphasize"><a className="App-footer_link" href="https://swapi.co/">SWAPI</a></span> (online web API for all Star Wars canon universe data) </span>
           <br/>
           <span>All StarWars © COPYRIGHT owned by <span className="App-footer_emphasize"><a className="App-footer_link" href="https://www.disney.com/">The Walt Disney Company</a></span></span>

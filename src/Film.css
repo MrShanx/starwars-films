@@ -1,14 +1,23 @@
 .Film-card {
-	box-shadow: 0px 5px 5px 5px gray;
+	/*box-shadow: 0px 5px 5px 5px gray;*/
 }
 
-.Film-button{
-	background-color: black;
-	opacity: 0.92;
+.Film-button {
+	background-color: transparent;
+	opacity: 0.5;
 	color: white;
-	min-width: 250px;
-	padding-top: 10px;
+	max-width: 250px;
+	/*padding-top: 10px;*/
 	cursor: pointer;
+	margin:0;
+	padding: 0;
+	border-radius: 10px;
+}
+
+.Film-button img {
+	/*width: 100%;*/
+	/*height: 100%;*/
+	border-radius: 10px;
 }
 
 .Film-button:hover {
@@ -30,6 +39,11 @@ MODAL
   position: relative;
   margin: -10px -30px;
   max-width: 100%;
+  /*background-color: black !important;*/
+    /*border-radius: 10px !important;*/
+}
+.modal-content {
+	background-color: black;
 }
 .modal .close-modal {
   position: absolute;
@@ -153,10 +167,21 @@ MODAL
   padding: 0 30px;
 }
 
+.modal .movie-description-container .resource-links {
+	float: right;
+	margin-right: 50px;
+}
+@media(max-width: 550px) {
+	.modal .movie-description-container .resource-links {
+		float: right;
+		margin-right: 20px;
+	}
+}
+
 /*********
 TABLET
 *********/
-@media only screen and (max-width: 970px) {
+@media only screen and (max-width: 1020px) {
 	.modal img {
 	  width: 225px;
 	  height: 500px;
@@ -169,7 +194,7 @@ TABLET
 		padding-bottom: 20px;
 	}
 	.modal .movie-description {
-		font-size: large;
+		font-size: medium;
 	}
 }
 
@@ -182,8 +207,9 @@ MOBILE
 	  display: flex;
 	  position: relative;
 	  margin: 0 -100px;
-	  min-width: 370px;
+	  min-width: 250px;
 	}
+	
 	.modal .close-modal {
 	  position: absolute;
 	  top: 0px;
@@ -193,6 +219,7 @@ MOBILE
 	  cursor: pointer;
 	}
 	.modal img {
+	  /*margin: auto 0;*/
 	  width: 175px;
 	  height: 350px;
 	  display: block;
@@ -250,36 +277,25 @@ MOBILE
 	}
 }
 
-/**********
-APPEAR EFFECT
-***********/
-/*****
-scroll bars for the rest of text
-*****/
-.movie-description-container {
-	overflow: auto;
-}
-.movie-description-container .appear {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  -webkit-animation: animate 3.5s steps(290, end);
-  		  animation: animate 3.5s steps(290, end);
-  word-break: normal;
+@media(max-width: 550px) {
+	.modal {
+		width: 100%;
+	}
+
+	.modal-movie-title {
+		box-shadow: none;
+	}
+
+	.modal-movie-title h1 {
+		text-align: center;
+	}
+
+	.modal img {
+	  display: none;
+	}
 }
 /* The appearance effect */
-@-webkit-keyframes animate {
-  0% {
-  	height: 0%;
-  }
-  100% { 
-  	height: 80%;
-  }
-}
-
-@keyframes animate {
-  0% {
-  	height: 0%;
-  }
-  100% { 
-  	height: 80%;
-  }
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
 }

@@ -4,26 +4,51 @@ import './Film.css';
 //for modal placement, which div
 ReactModal.setAppElement('#root');
 
+// const customStyles = {
+//   overlay : {
+//     position          : 'fixed',
+//     top               : 0,
+//     left              : 0,
+//     right             : 0,
+//     bottom            : 0,
+//     backgroundColor   : 'rgba(0, 0, 0, .8)'
+//   },
+//   content : {
+//     position                   : 'absolute',
+//     top                        : '40px',
+//     left                       : '100px',
+//     right                      : '100px',
+//     bottom                     : 'auto',
+//     background                 : '#fff',
+//     overflow                   : 'auto',
+//     WebkitOverflowScrolling    : 'touch',
+//     borderRadius               : '0px',
+//     outline                    : 'none',
+//   }
+// };
+
 const customStyles = {
   overlay : {
-    position          : 'fixed',
-    top               : 0,
-    left              : 0,
-    right             : 0,
-    bottom            : 0,
-    backgroundColor   : 'rgba(0, 0, 0, .8)'
-  },
+    position		 : 'fixed', /* Stay in place */
+    zIndex			 : 1, /* Sit on top */
+    paddingTop		 : '50px', /* Location of the box */
+    left 			 : 0,
+    top 			 : 0,
+    width 			 : '100%', /* Full width */
+    height 			 : '100%', /* Full height */
+    overflow   		 : 'auto', /* Enable scroll if needed */
+    backgroundColor  : 'rgba(255,255,255,0.4)', 
+	},
   content : {
-    position                   : 'absolute',
-    top                        : '40px',
-    left                       : '100px',
-    right                      : '100px',
-    bottom                     : 'auto',
-    background                 : '#fff',
-    overflow                   : 'auto',
-    WebkitOverflowScrolling    : 'touch',
-    borderRadius               : '0px',
-    outline                    : 'none',
+  	position		 : 'relative',
+    backgroundColor  : 'black',
+    margin			 : 'auto',
+    padding          : 0,
+    marginBottom     : '50px',
+    border           : '1px solid #888',
+    width            : '80%',
+    boxShadow        : '0 4px 8px 0 rgba(0,0,0,0.1),0 6px 20px 0 rgba(0,0,0,0.19)',
+  	animation        : 'animatetop 0.4s'
   }
 };
 
@@ -45,7 +70,7 @@ class Film extends React.Component {
 
 	render() {
 		const { showModal } = this.state;
-		const { id, img, name } = this.props;
+		const { id, img } = this.props;
 
 		return (
 			<div 
@@ -60,14 +85,13 @@ class Film extends React.Component {
 				>
 				<button 
 				className="
-					Film-button
-					br3"
+					Film-button"
 					value={id} 
 					onClick={this.openModal}
 				>
 					<img alt='movie poster' src={`${img}`} />
-					<h3>{name}</h3>
-					<p className="Film-episode">Episode {id}</p>
+					{/*<h3>{name}</h3>
+					 <p className="Film-episode">Episode {id}</p>*/}
 				</button>
 
 				<Modal 
@@ -90,7 +114,7 @@ const Modal = ({ showModal, closeModal, movie }) => (
     	>
 		<p onClick={closeModal} className="close-modal">X</p>
 		<img src={movie.imgBig} alt={movie.name} />
-			<div>
+			<div className="modal-content">
 				<div className="modal-movie-title">
 					<h1>{movie.name}</h1>
 					<div className="modal-genre">
@@ -122,7 +146,10 @@ const Modal = ({ showModal, closeModal, movie }) => (
 					<p className="movie-description appear">
 						{movie.desc}
 					</p>
-					<a href={movie.url}>SWAPI</a><a className="movie-imdb-link" href={movie.imdbLink}>IMDb</a>
+					<div className="resource-links">
+						<a className="" href={movie.url}>SWAPI</a>
+						<a className="movie-imdb-link" href={movie.imdbLink}>IMDb</a>
+					</div>
 				</div>
 			</div>
 	</ReactModal>

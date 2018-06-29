@@ -5,6 +5,13 @@
   src: url('Starjhol.ttf');
 }
 
+@font-face {
+  font-family: 'Starjout';
+  font-style: normal;
+  font-weight: normal;
+  src: url('Starjout.ttf');
+}
+
 a {
   text-decoration: none;
 }
@@ -12,14 +19,22 @@ a:hover {
   text-decoration: underline;
 }
 
-h1, .universe, .Film-episode {
-   font-family: 'Starjhol', 'cursive';
-   font-weight: lighter;
-   font-size: 1.5em;
+h1, .universe {
+  font-family: 'Starjhol', 'cursive';
+  font-weight: lighter;
+  font-size: 1.4em;
+  color: gold;
+}
+
+.Film-episode {
+  font-family: 'Starjout', 'cursive';
+  font-weight: lighter;
+  font-size: 1.2em;
 }
 
 .App {
   text-align: center;
+  /*background-color: green;*/
 }
 
 .App-loading-header {
@@ -28,13 +43,13 @@ h1, .universe, .Film-episode {
 }
 
 .App-header-container {
-  box-shadow: 0px 0px 10px 5px gray ;
+  box-shadow: 0px 0px 1px 5px gold ;
   /*background-color: rgba(255, 0,0,0.4);*/
 }
 
 .App-header {
   /*background-color: rgba(150,100,100,0.2);*/
-  padding: 20px;
+  padding: 20px 0px;
   color: gold;
 }
 
@@ -58,37 +73,53 @@ h1, .universe, .Film-episode {
 }
 
 .click-info {
-  margin: 8px 0;
-  padding: 20px;
-  color: white;
-  background-color: rgba(0,0,0,.8);
-  border: 5px solid black;
+  padding: 15px;
+  /*background-color: rgba(0,0,0,.8);*/
+  border: 5px solid gold;
   border-radius: 10px;
-  box-shadow: 0px 5px 5px 5px black;
+  box-shadow: 0px 5px 100px 1px yellow;
   font-family: cursive;
-}
-
-.click-info-container .click-info:hover, .click-info-container:hover ~ .Film-card-list .Film-card .Film-button {
   background-color: black;
-  opacity: 1;
-  color: gold;
+  color: white;
+  margin: 0px 0px;
 }
 
 .App-content {
-  margin: 0 5%;
+  margin-top: 5px;
+  margin-bottom: -10px;
+  padding: 20px 5px;
+  /*background-color: red;*/
+  /*margin: 0 5%;*/
+  background: url(death_star.jpg) top center;
+  /*background: url(r2d2.jpg);*/
+  /*background: url(light_speed.jpg);*/
+  background-size: 100%;
+  width:100%;
+  height: 100%;
 }
-p{
+
+@media(max-width: 700px) {
+  .App-content {
+    background: url(light_saber.jpg) top center;
+  }
+}
+
+p {
   font-size: large;
 }
 
 .App-footer {
   margin-top: 15px;
-  background-color:  #222;
+  /*background-color:  #222;*/
   padding: 20px;
-  color: rgba(255,255,255,0.6);
+  color: rgba(255,255,255,.8);
   font-size: x-small;
   text-transform: uppercase;
-  box-shadow: 0px 0px 10px 10px black inset;
+  box-shadow: 0px 0px 1px 5px gold;
+}
+
+.stars-foot {
+    background:#000 url(stars_foot.png) repeat top center;
 }
 
 .App-footer_emphasize, .App-footer_link {
@@ -96,6 +127,7 @@ p{
   opacity: 0.8;
   font-weight: bold;
   font-size: larger;
+  box-shadow: 0px 0px 100px 1px;
 }
 
 /************
