@@ -42,10 +42,8 @@ class App extends Component {
     (
       <div>
         <div className="App">
-        <div>
+        <div className="App-header-container stars">
           <header className="App-header">
-            <div className="stars"></div>
-            <div className="twinkling"></div>
             <img className="App-logo" src={swlogo} alt="StarWars logo" />
             <h3 className="universe">Cinematic Universe</h3>
           </header>
@@ -66,17 +64,15 @@ class App extends Component {
     ) :
     (
       <div className="App">
-        <div className="App-header-container">
+        <div className="App-header-container stars">
           <header className="App-header">
-            <div className="stars"></div>
-            <div className="twinkling"></div>
             <img className="App-logo" src={swlogo} alt="StarWars logo" />
             <h3 className="universe">Cinematic Universe</h3>
           </header>
         </div>
         <div className="App-content">
           <div className="click-info-container" >
-            <p className="click-info">Click for more info.</p>
+            <p className="sticky click-info">Click for more info.</p>
           </div>
           <FilmList movies={films} images={images}/>
         </div>

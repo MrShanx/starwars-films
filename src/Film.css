@@ -12,8 +12,12 @@
 }
 
 .Film-button:hover {
-	color: yellow;
+	color: gold;
 	opacity: 1;
+}
+
+.Film-episode {
+	color: gold;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Poppins');
