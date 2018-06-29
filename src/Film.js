@@ -56,8 +56,7 @@ class Film extends React.Component {
 					dib
 					ma2
 					grow
-					bw2
-					shadow-5"
+					bw2"
 				>
 				<button 
 				className="

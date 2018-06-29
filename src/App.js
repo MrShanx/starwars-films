@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import FilmList from './FilmList.js';
 import { images } from './images.js';
 import load from './loadingIcon.png';
+import swlogo from './StarWarsLogo.png';
 import './App.css';
 
 class App extends Component {
@@ -41,10 +42,14 @@ class App extends Component {
     (
       <div>
         <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">Star Wars</h1>
-          <h3>Cinematic Universe</h3>
-        </header>
+        <div>
+          <header className="App-header">
+            <div className="stars"></div>
+            <div className="twinkling"></div>
+            <img className="App-logo" src={swlogo} alt="StarWars logo" />
+            <h3 className="universe">Cinematic Universe</h3>
+          </header>
+        </div>
         <div className="App-content">
           <img className="App-loading" src={load} alt={'load'} />
           <h1 className="App-loading-header">App Loading</h1>
@@ -61,12 +66,18 @@ class App extends Component {
     ) :
     (
       <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">Star Wars</h1>
-          <h3>Cinematic Universe</h3>
-        </header>
+        <div className="App-header-container">
+          <header className="App-header">
+            <div className="stars"></div>
+            <div className="twinkling"></div>
+            <img className="App-logo" src={swlogo} alt="StarWars logo" />
+            <h3 className="universe">Cinematic Universe</h3>
+          </header>
+        </div>
         <div className="App-content">
-          <p>Click for more info.</p>
+          <div className="click-info-container" >
+            <p className="click-info">Click for more info.</p>
+          </div>
           <FilmList movies={films} images={images}/>
         </div>
         <footer className="App-footer">
@@ -81,21 +92,4 @@ class App extends Component {
   }
 }
 
- // DELETE LATER 
- /*
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
-  }
-}
-*/
 export default App;

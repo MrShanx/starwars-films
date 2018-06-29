@@ -3,7 +3,7 @@ import Film from './Film.js';
 
 const FilmList = ({ movies, images }) => {
 	return (
-		<div>
+		<div className="Film-card-list">
 			{
 				movies.map((movie) => {
 					return (
