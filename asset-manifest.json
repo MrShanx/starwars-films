@@ -1,9 +1,13 @@
 {
-  "main.css": "static/css/main.e2dce1d9.css",
-  "main.css.map": "static/css/main.e2dce1d9.css.map",
-  "main.js": "static/js/main.e1770c1c.js",
-  "main.js.map": "static/js/main.e1770c1c.js.map",
+  "main.css": "static/css/main.f7e64ef9.css",
+  "main.css.map": "static/css/main.f7e64ef9.css.map",
+  "main.js": "static/js/main.33a31ad4.js",
+  "main.js.map": "static/js/main.33a31ad4.js.map",
   "static\\media\\StarWarsLogo.png": "static/media/StarWarsLogo.dcbe85fe.png",
   "static\\media\\Starjhol.ttf": "static/media/Starjhol.9c91297e.ttf",
-  "static\\media\\stars.png": "static/media/stars.6494ab5b.png"
+  "static\\media\\Starjout.ttf": "static/media/Starjout.f72f509a.ttf",
+  "static\\media\\death_star.jpg": "static/media/death_star.ec0b4348.jpg",
+  "static\\media\\light_saber.jpg": "static/media/light_saber.5bffd8ab.jpg",
+  "static\\media\\stars.png": "static/media/stars.984d0812.png",
+  "static\\media\\stars_foot.png": "static/media/stars_foot.1f85f2a7.png"
 }
